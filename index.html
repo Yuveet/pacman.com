@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pac-Man</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+      #gameCanvas {
+        box-shadow: 10px 10px 20px black;
+      }
+      h1 {
+        text-align: center;
+        font-family: comic sans MS;
+        font-size: 50px;
+        font-weight: 1500;
+        color: rgb(15, 0, 53);
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        height: 100vh;
+        background: #ffcc66;
+      }
+      .timer {
+        font-family: sans-serif;
+        display: inline-block;
+        padding: 24px 32px;
+        border-radius: 30px;
+        background: white;
+      }
+
+      .timer__part {
+        font-size: 36px;
+        font-weight: bold;
+      }
+
+      .timer__btn {
+        width: 50px;
+        height: 50px;
+        margin-left: 16px;
+        border-radius: 50%;
+        border: none;
+        color: white;
+        background: #8208e6;
+        cursor: pointer;
+      }
+
+      .timer__btn--start {
+        background: #00b84c;
+      }
+
+      .timer__btn--stop {
+        background: #ff0256;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Pac-Man</h1>
+      <canvas id="gameCanvas"></canvas>
+      <br />
+      <center><div class="timer"></div></center>
+    </div>
+    <script src="src/Game.js" type="module"></script>
+  </body>
+</html>
